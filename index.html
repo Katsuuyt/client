@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katsu Store - Upload File</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat datang di Website Katsu Store</h1>
+        <p>Untuk meng-upload, silahkan tekan tombol upload di bawah</p>
+        <input type="file" id="fileInput" />
+        <button id="uploadButton">Upload</button>
+        
+        <div id="confirmation" style="display: none;">
+            <h2>Konfirmasi Upload</h2>
+            <p id="fileInfo"></p>
+            <button id="confirmButton">Konfirmasi</button>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h2>Upload Berhasil!</h2>
+            <p>Tautan Pendek: <span id="shortLink"></span></p>
+            <p>Tautan Panjang: <span id="longLink"></span></p>
+            <p>Besar File: <span id="fileSize"></span> bytes</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
